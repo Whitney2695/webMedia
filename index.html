@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Learning for Kids</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="home-image">
+      <img src="https://cdn.pixabay.com/photo/2022/09/29/17/15/halloween-7487706_1280.jpg" alt="Fun Learning for Kids" width="100%">
+    </div>
+    <div class="hero">
+      <h1>Welcome to Fun Learning!</h1>
+      <p>Engage your child with fun and interactive games!</p>
+      <a href="#games" class="btn">Start Learning</a>
+    </div>
+  </section>
+
+  <section id="games">
+    <h2>Learn with Fun Games</h2>
+    <div class="game-grid">
+      <div class="game">
+        <h3>Alphabet Tracing</h3>
+        <canvas id="alphabetCanvas" width="300" height="200"></canvas>
+        <button class="btn" onclick="startAlphabetGame()">Play</button>
+      </div>
+      <div class="game">
+        <h3>Matching Game</h3>
+        <svg width="300" height="200">
+          <circle cx="50" cy="50" r="40" fill="blue" />
+          <rect x="100" y="10" width="150" height="100" fill="red" />
+        </svg>
+        <button class="btn">Play</button>
+      </div>
+      <div class="game">
+        <h3>Shape Identification</h3>
+        <p>Drag and drop shapes into place.</p>
+        <button class="btn">Play</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="multimedia">
+    <h2>Watch & Listen</h2>
+    <div class="media">
+      <h3>Learn Numbers</h3>
+      <video width="320" height="240" controls>
+        <source src="https://cdn.pixabay.com/video/2017/02/15/7814-204510017_tiny.mp4" type="video/mp4">
+        <track src="numbers_captions.vtt" kind="captions" srclang="en" label="English">
+      </video>
+    </div>
+    <div class="media">
+      <h3>Sing Along Rhymes</h3>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="media">
+      <h3>Animal Sounds</h3>
+      <audio controls>
+        <source src="https://soundcloud.com/user-918825352/the-animal-sounds-song?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+
+  <section id="geolocation">
+    <h2>Where Are You?</h2>
+    <p>Click the button to find out where you are:</p>
+    <button class="btn" onclick="getLocation()">Find Location</button>
+    <p id="location"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Fun Learning | Contact Us</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
