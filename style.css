@@ -1,125 +1,114 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Comic Sans MS', sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
-  }
-  
-  header {
-    background-color: #ff6f61;
-    padding: 15px 0;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-  }
-  
-  nav ul li a:hover {
-    color: #ffd700;
-  }
-  
-  #home {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #ffe4b5;
-  }
-  
-  .hero h1 {
-    font-size: 48px;
-    color: #ff6f61;
-  }
-  
-  .hero p {
-    font-size: 20px;
-    color: #333;
-  }
-  
-  .btn {
-    display: inline-block;
-    background-color: #ff6f61;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-  }
-  
-  .btn:hover {
-    background-color: #ffcccb;
-  }
-  
-  #games {
-    background-color: #f5f5f5;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  #games h2 {
-    font-size: 36px;
-    color: #ff6f61;
-    margin-bottom: 20px;
-  }
-  
-  .game-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .game {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  #multimedia {
-    background-color: #ffe4e1;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  #multimedia h2 {
-    font-size: 36px;
-    color: #ff6f61;
-    margin-bottom: 20px;
-  }
-  
-  .media {
-    margin: 20px 0;
-  }
-  
-  #geolocation {
-    background-color: #fafad2;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  footer {
-    background-color: #ff6f61;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: white; /* White background for the body */
+  color: #fff; /* White text for readability against hot pink backgrounds */
+}
+
+header {
+  background-color: #ff1493; /* Hot pink for header */
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px 20px; /* Reduced padding for a more compact look */
+  background-color: #ff69b4; /* Lighter hot pink for contrast */
+  color: white;
+}
+
+.home-image img {
+  width: 80%; /* Reduce size of the top image */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px; /* Optional: Rounded corners for a softer look */
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #ff1493; /* Hot pink background for image section */
+}
+
+.image-grid .image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 3px solid white; /* White border around the images */
+  border-radius: 5px;
+}
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #ff69b4; /* Light hot pink for video section */
+}
+
+.video-grid .video video {
+  width: 320px;
+  height: 240px;
+  border: 3px solid white; /* White border for videos */
+  border-radius: 5px;
+}
+
+.audio-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #ff1493; /* Hot pink background for audio section */
+}
+
+.audio-grid .audio audio {
+  width: 300px;
+  border: 2px solid white; /* White border around audio controls */
+}
+
+footer {
+  background-color: #ff1493; /* Hot pink background for footer */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Styling for contact information */
+footer p:last-child {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
